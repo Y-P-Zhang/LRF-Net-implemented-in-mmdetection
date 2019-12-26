@@ -13,7 +13,7 @@ import time
 
 
 
-lrf_vgg_coco_512 = 'LRF_vgg_COCO_512.pth'
+source_file = 'LRF_vgg_COCO_512.pth'
 
 
 
@@ -65,22 +65,13 @@ def save_checkpoint(state_dict, optimizer=None, meta=None):
     if optimizer is not None:
         checkpoint['optimizer'] = optimizer.state_dict()
     
-    filename = lrf_vgg_coco_512[:-4] + '_transform' + '.pth'
+    filename = source_file[:-4] + '_transform' + '.pth'
 
     torch.save(checkpoint, filename)
 
 
 
 
-lrf_state_dict = torch.load(lrf_vgg_coco_512)
+lrf_state_dict = torch.load(source_file)
 transformed = transform(lrf_state_dict)
-save_checkpoint(transformed)
-
-
-          
-            
-
-
-
-
-
+save_checkpoint(transformed)   
