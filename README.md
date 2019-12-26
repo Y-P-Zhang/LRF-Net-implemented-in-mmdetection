@@ -31,14 +31,6 @@ LRF512|coco2014 train | coco2014 val|0.394
 LRF300|coco2014 train | coco2017 val|0.267
 LRF512|coco2014 train | coco2017 val|0.31
 
-The offical version is trained in coco2014 train and I do not know which dataset the author use to test.  
-The offical version Performance in paper:
-
-Models| Performance
-:--:|:--:
-LRF300|0.32
-LRF512|0.362
-
 ### Performance in PASCAL VOC
 
 All the following scores are trained with VOC 07+12 trainval by 24 epoch and test in VOC07 test.
