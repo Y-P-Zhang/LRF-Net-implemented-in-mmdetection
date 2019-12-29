@@ -33,7 +33,7 @@ LRF300|0.797
 SSD512|0.793
 LRF512|0.818
 
-# ### Performance in COCO
+### Performance in COCO
 
 All of the following scores are from the official trained models which transformed into mmdetection version.  i.e. I only  change the keys of OrderedDict.
 
