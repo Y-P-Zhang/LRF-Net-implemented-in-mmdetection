@@ -22,15 +22,6 @@ Pascal VOC|√|×
 
 ## Performance
 
-All of the following scores are from the official trained models which transformed into mmdetection version.  i.e. I only  change the keys of OrderedDict.
-
-Models|Train DataSet |Test DataSet | This Repository 
-:--:|:--:|:--:|:--:
-LRF300|coco2014 train | coco2014 val|0.343
-LRF512|coco2014 train | coco2014 val|0.394
-LRF300|coco2014 train | coco2017 val|0.267
-LRF512|coco2014 train | coco2017 val|0.31
-
 ### Performance in PASCAL VOC
 
 All the following scores are trained with VOC 07+12 trainval by 24 epoch and test in VOC07 test.
@@ -41,3 +32,14 @@ SSD300|0.767
 LRF300|0.797
 SSD512|0.793
 LRF512|0.818
+
+# ### Performance in COCO
+
+All of the following scores are from the official trained models which transformed into mmdetection version.  i.e. I only  change the keys of OrderedDict.
+
+Models|Train DataSet |Test DataSet | This Repository 
+:--:|:--:|:--:|:--:
+LRF300|coco2014 trainval | coco2017 val|0.267
+LRF512|coco2014 trainval | coco2017 val|0.31
+
+
