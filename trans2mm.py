@@ -13,7 +13,7 @@ import time
 
 
 
-source_file = 'LRF_vgg_COCO_512.pth'
+
 
 
 
@@ -71,7 +71,8 @@ def save_checkpoint(state_dict, optimizer=None, meta=None):
 
 
 
-
-lrf_state_dict = torch.load(source_file)
-transformed = transform(lrf_state_dict)
-save_checkpoint(transformed)   
+if __name__ == '__main__':
+    source_file = 'LRF_vgg_COCO_512.pth'
+    lrf_state_dict = torch.load(source_file)
+    transformed = transform(lrf_state_dict)
+    save_checkpoint(transformed)   
